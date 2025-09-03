@@ -2,8 +2,12 @@
   "name": "@innaalieva/ajs",
   "version": "1.0.0",
   "description": "",
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com/"
+  },
   "main": "dist/index.js",
   "scripts": {
+    "build": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +19,13 @@
   "bugs": {
     "url": "https://github.com/innaalieva/ajs/issues"
   },
-  "homepage": "https://github.com/innaalieva/ajs#readme"
+  "homepage": "https://github.com/innaalieva/ajs#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.28.3",
+    "@babel/core": "^7.28.3",
+    "@babel/preset-env": "^7.28.3",
+    "babel-loader": "^10.0.0",
+    "webpack": "^5.101.3",
+    "webpack-cli": "^6.0.1"
+  }
 }
